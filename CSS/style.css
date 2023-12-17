@@ -96,3 +96,11 @@ body {
   font-size: larger;
 }
 /* Skills Section Style */
+.media-body .skill {
+    color: rgb(98, 77, 89);
+    font-size: larger;
+}
+.media-body ul {
+    color: rgb(98, 77, 89);
+}
+/* Contact Section */
