@@ -1,0 +1,33 @@
+/* Navbar styling */
+
+.miniPicture {
+    border-radius: 50%;
+}
+.name {
+    font-weight: bolder;
+}
+.collapse {
+    justify-content: flex-end;
+}
+nav {
+    background-color: rgb(227, 188, 210);
+}
+/* Hero styling */
+
+.myhero {
+    background-image: url(../Images/mybigheroo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.keeper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.lead {
+    color: rgb(98, 77, 89);
+    background-color: white;
+}
+
+/* work section styling */
