@@ -21,21 +21,25 @@ nav {
 /* Hero styling */
 
 .myhero {
+  margin-top: 10%;
   background-image: url(../Images/mybigheroo.png);
   background-size: cover;
   background-repeat: no-repeat;
+  border: none;
 }
 .keeper {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .lead {
   color: rgb(98, 77, 89);
   background-color: white;
+  font-weight: bold;
 }
-
+.myhero .keeper .coolsub {
+  font-weight: bold;
+}
 /* work section styling */
 
 body {
@@ -97,10 +101,42 @@ body {
 }
 /* Skills Section Style */
 .media-body .skill {
-    color: rgb(98, 77, 89);
-    font-size: larger;
+  color: rgb(98, 77, 89);
+  font-size: larger;
 }
 .media-body ul {
-    color: rgb(98, 77, 89);
+  color: rgb(98, 77, 89);
 }
 /* Contact Section */
+.footer .contactMe .btn-primary {
+  background-color: rgb(211, 173, 194);
+  border: none;
+  color: rgb(98, 77, 89);
+  font-weight: bold;
+}
+.btn-primary {
+  margin: 4px;
+}
+.footer .contactMe .btn-primary:hover {
+  background-color: rgb(157, 131, 145);
+}
+.footer h6 {
+  color: rgb(98, 77, 89);
+  font-weight: bold;
+  text-align: center;
+  border-top: dotted rgb(98, 77, 89);
+  padding-top: 4px;
+}
+/* media query for hero subtitle on small screens */
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+  .keeper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  .myhero .keeper .coolsub {
+    font-weight: lighter;
+  }
+}
