@@ -1,33 +1,73 @@
 /* Navbar styling */
 
 .miniPicture {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 .name {
-    font-weight: bolder;
+  font-weight: bolder;
 }
-.collapse {
-    justify-content: flex-end;
-}
+
 nav {
-    background-color: rgb(227, 188, 210);
+  background-color: rgb(227, 188, 210);
+}
+.links {
+  color: rgb(98, 77, 89);
+  font-weight: bolder;
+}
+.links:hover {
+  color: rgb(51, 40, 46);
 }
 /* Hero styling */
 
 .myhero {
-    background-image: url(../Images/mybigheroo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(../Images/mybigheroo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .keeper {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lead {
-    color: rgb(98, 77, 89);
-    background-color: white;
+  color: rgb(98, 77, 89);
+  background-color: white;
 }
 
 /* work section styling */
+
+body {
+  background-color: #d9ccd2 !important;
+}
+
+.firstProject {
+  background-image: url(../Images/MyBusinessCard.png);
+  background-size: cover;
+  background-position: 50%;
+  height: 300px;
+  border: 4px solid rgb(92, 43, 51);
+}
+.secondProject {
+  background-image: url(../Images/screen1.png);
+  background-size: cover;
+  height: 200px;
+}
+.thirdProject {
+  background-image: url(../Images/screenshot.png);
+  background-size: cover;
+  height: 200px;
+}
+.fourthProject {
+  background-image: url(../Images/02-portfolio-2.jpg);
+  background-size: cover;
+  height: 200px;
+}
+.fivthProject {
+  background-image: url(../Images/02-portfolio-1.jpg);
+  background-size: cover;
+  height: 200px;
+}
+.col-sm-6 {
+  padding: 5px;
+}
