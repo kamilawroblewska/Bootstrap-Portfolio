@@ -33,13 +33,13 @@ nav {
 }
 
 .lead {
-  color: rgb(98, 77, 89);
-  background-color: rgba(241, 223, 234, 0.532);
-  font-weight: bold;
+  color: rgb(93, 71, 83);
+  background-color: #d9ccd2;
   padding: 5px;
 }
 .myhero .keeper .coolsub {
   font-weight: bold;
+  font-weight: 500;
 }
 /* work section styling */
 
@@ -50,7 +50,7 @@ body {
 .firstProject {
   background-image: url(../Images/MyBusinessCard.png);
   background-size: cover;
-  background-position: 50%;
+  background-position: 20%;
   height: 300px;
   border: 15px solid rgba(211, 199, 206, 0.5) !important;
   margin: 20px;
@@ -256,7 +256,9 @@ body .skillsContainer .skillsCard {
     padding-top: 60px;
   }
   .myhero .keeper .coolsub {
-    font-weight: lighter;
+    font-weight: bold;
+    font-weight: 400;
+    background-color: #d9ccd2;
   }
   .skillsContainer {
     width: 350px;
