@@ -76,13 +76,32 @@ body {
   padding: 5px;
 }
 .card-body .btn-primary {
-  background-color: rgb(211, 173, 194);
-  border: none;
-  color: rgb(98, 77, 89);
-  font-weight: bold;
+    background-color: rgb(157, 131, 145);
+    color: rgb(98, 77, 89);
+    border: none;
+   box-shadow: none;
+   font-weight: bold;
 }
+.card-body .btn-primary:visited {
+    background-color: rgb(157, 131, 145) !important;
+    border: none;
+    color: rgb(98, 77, 89);
+   box-shadow: none !important;
+  }
+  .card-body .btn-primary:focus {
+    background-color: rgb(157, 131, 145) !important;
+    border: none;
+    color: rgb(98, 77, 89);
+    box-shadow: none !important;
+  }
+  .card-body .btn-primary:active {
+    background-color: rgb(157, 131, 145) !important;
+    color: rgb(98, 77, 89);
+    border: none;
+   box-shadow: none !important;
+  }
 .card-body .btn-primary:hover {
-  background-color: rgb(157, 131, 145);
+  background-color: rgb(221, 196, 209) !important;
 }
 /* About me Section Style */
 .aboutContent .row {
@@ -121,6 +140,21 @@ body {
     color: white;
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
+.footer .contactMe .btn-primary:focus {
+    background-color: rgb(211, 173, 194) !important;
+  color: rgb(98, 77, 89);
+  box-shadow: 0 0 11px rgba(33,33,33,.2)!important;;
+}
+.footer .contactMe .btn-primary:active {
+    background-color: rgb(211, 173, 194) !important;
+    color: rgb(98, 77, 89);
+    box-shadow: 0 0 11px rgba(33,33,33,.2)!important;; 
+}
+.footer .contactMe .btn-primary:visited {
+background-color: rgb(211, 173, 194) !important;
+color: rgb(98, 77, 89);
+box-shadow:0 0 11px rgba(33,33,33,.2)!important;; 
+}
 .footer h6 {
   color: rgb(98, 77, 89);
   font-weight: bold;
@@ -130,14 +164,15 @@ body {
 }
 /* media query for hero subtitle on small screens */
 
-@media only screen and (max-width: 600px) and (min-width: 400px) {
+@media only screen and (min-width: 200px) and (max-width: 600px)   {
   .keeper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 60px;
   }
   .myhero .keeper .coolsub {
     font-weight: lighter;
   }
+  
 }
