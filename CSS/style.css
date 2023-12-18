@@ -50,7 +50,7 @@ body {
 .firstProject {
   background-image: url(../Images/MyBusinessCard.png);
   background-size: cover;
-  background-position: 50%;
+  background-position: 20%;
   height: 300px;
   border: 15px solid rgba(211, 199, 206, 0.5) !important;
   margin: 20px;
