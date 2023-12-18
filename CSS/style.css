@@ -59,14 +59,14 @@ body {
   background-image: url(../Images/screen1.png);
   background-size: cover;
   height: 200px;
-  border: 15px solid  rgba(211, 199, 206, 0.5) !important;
+  border: 15px solid rgba(211, 199, 206, 0.5) !important;
   margin: 20px;
 }
 .thirdProject {
   background-image: url(../Images/screenshot.png);
   background-size: cover;
   height: 200px;
-  border: 15px solid  rgba(211, 199, 206, 0.5)!important;
+  border: 15px solid rgba(211, 199, 206, 0.5) !important;
   margin: 20px;
 }
 .fourthProject {
@@ -115,17 +115,21 @@ body {
   background-color: rgb(221, 196, 209) !important;
 }
 /* About me Section Style */
-.aboutContent .row {
-  background-color: #d9ccd2;
-  border-style: dotted;
-  border-color: rgb(73, 59, 66);
-}
 
+.meSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
 .myimg {
   border-radius: 100px;
+  margin: 5px;
 }
-.aboutme .card-body .card-title,
-.card-text {
+.meSection .description,
+h5,
+p {
+  margin-left: 5px;
   color: rgb(98, 77, 89);
   font-size: larger;
 }
@@ -135,9 +139,6 @@ body {
   color: rgb(98, 77, 89);
   font-size: larger;
   text-align: center;
-}
-.skills svg {
-  justify-items: center;
 }
 .skillsContainer {
   display: flex;
@@ -260,6 +261,10 @@ body .skillsContainer .skillsCard {
   .skillsContainer {
     width: 350px;
     margin-bottom: 20px;
+  }
+  .meSection {
+    display: flex;
+    flex-direction: column;
   }
 }
 /* media query for bigger screens for skills section */
