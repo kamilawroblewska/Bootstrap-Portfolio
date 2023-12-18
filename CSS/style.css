@@ -34,8 +34,9 @@ nav {
 
 .lead {
   color: rgb(98, 77, 89);
-  background-color: white;
+  background-color: rgba(241, 223, 234, 0.532);
   font-weight: bold;
+  padding: 5px;
 }
 .myhero .keeper .coolsub {
   font-weight: bold;
@@ -51,55 +52,65 @@ body {
   background-size: cover;
   background-position: 50%;
   height: 300px;
+  border: 15px solid rgba(211, 199, 206, 0.5) !important;
+  margin: 20px;
 }
 .secondProject {
   background-image: url(../Images/screen1.png);
   background-size: cover;
   height: 200px;
+  border: 15px solid  rgba(211, 199, 206, 0.5) !important;
+  margin: 20px;
 }
 .thirdProject {
   background-image: url(../Images/screenshot.png);
   background-size: cover;
   height: 200px;
+  border: 15px solid  rgba(211, 199, 206, 0.5)!important;
+  margin: 20px;
 }
 .fourthProject {
   background-image: url(../Images/02-portfolio-2.jpg);
   background-size: cover;
   height: 200px;
+  border: 15px solid rgba(211, 199, 206, 0.5) !important;
+  margin: 20px;
 }
 .fivthProject {
   background-image: url(../Images/02-portfolio-1.jpg);
   background-size: cover;
   height: 200px;
+  border: 15px solid rgb(148, 72, 115, 0.2) !important;
+  margin: 20px;
 }
 .col-sm-6 {
-  padding: 5px;
+  padding: 10px;
 }
 .card-body .btn-primary {
-    background-color: rgb(157, 131, 145);
-    color: rgb(98, 77, 89);
-    border: none;
-   box-shadow: none;
-   font-weight: bold;
+  background-color: rgb(157, 131, 145);
+  color: rgb(98, 77, 89);
+  border: none;
+  box-shadow: none;
+  font-weight: bold;
 }
 .card-body .btn-primary:visited {
-    background-color: rgb(157, 131, 145) !important;
-    border: none;
-    color: rgb(98, 77, 89);
-   box-shadow: none !important;
-  }
-  .card-body .btn-primary:focus {
-    background-color: rgb(157, 131, 145) !important;
-    border: none;
-    color: rgb(98, 77, 89);
-    box-shadow: none !important;
-  }
-  .card-body .btn-primary:active {
-    background-color: rgb(157, 131, 145) !important;
-    color: rgb(98, 77, 89);
-    border: none;
-   box-shadow: none !important;
-  }
+  background-color: rgb(157, 131, 145) !important;
+  border: none;
+  color: rgb(98, 77, 89);
+  box-shadow: none !important;
+}
+.card-body .btn-primary:focus {
+  background-color: rgb(157, 131, 145) !important;
+  border: none;
+  color: rgb(98, 77, 89);
+  box-shadow: none !important;
+}
+.card-body .btn-primary:active {
+  background-color: rgb(157, 131, 145) !important;
+  color: rgb(98, 77, 89);
+  border: none;
+  box-shadow: none !important;
+}
 .card-body .btn-primary:hover {
   background-color: rgb(221, 196, 209) !important;
 }
@@ -113,18 +124,91 @@ body {
 .myimg {
   border-radius: 100px;
 }
-.card-body .card-title,
+.aboutme .card-body .card-title,
 .card-text {
   color: rgb(98, 77, 89);
   font-size: larger;
 }
-/* Skills Section Style */
-.media-body .skill {
+
+/* Skills Section Style + Scroll Bar */
+.skills .skill {
   color: rgb(98, 77, 89);
   font-size: larger;
+  text-align: center;
 }
-.media-body ul {
-  color: rgb(98, 77, 89);
+.skills svg {
+  justify-items: center;
+}
+.skillsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  padding: 16px;
+  max-width: 350px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.skillsCard {
+  min-width: 350px;
+  min-height: 200px;
+  color: rgb(73, 69, 71);
+  display: flex;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 16px;
+  transition: all 0.2s;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  scroll-snap-align: start;
+}
+.skillsCard:nth-child(1) {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(225, 181, 206),
+    rgb(168, 85, 126)
+  );
+}
+.skillsCard:nth-child(2) {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(237, 168, 200),
+    rgb(227, 49, 135)
+  );
+}
+.skillsCard:nth-child(3) {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(232, 204, 220),
+    rgb(203, 130, 167)
+  );
+}
+.skillsCard:nth-child(4) {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(212, 179, 199),
+    rgb(173, 11, 92)
+  );
+}
+.skillsContainer::-webkit-scrollbar {
+  height: 10px;
+}
+.skillsContainer::-webkit-scrollbar-track {
+  background: rgb(148, 72, 115);
+  border-radius: 999px;
+}
+.skillsContainer::-webkit-scrollbar-thumb {
+  background: rgb(221, 196, 209);
+  border-radius: 999px;
+}
+body .skillsContainer .skillsCard {
+  justify-items: center;
+  align-items: center;
+  display: flex;
 }
 /* Contact Section */
 .footer .contactMe .btn-primary {
@@ -137,23 +221,23 @@ body {
   margin: 4px;
 }
 .footer .contactMe .btn-primary:hover {
-    color: white;
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  color: white;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 .footer .contactMe .btn-primary:focus {
-    background-color: rgb(211, 173, 194) !important;
+  background-color: rgb(211, 173, 194) !important;
   color: rgb(98, 77, 89);
-  box-shadow: 0 0 11px rgba(33,33,33,.2)!important;;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2) !important;
 }
 .footer .contactMe .btn-primary:active {
-    background-color: rgb(211, 173, 194) !important;
-    color: rgb(98, 77, 89);
-    box-shadow: 0 0 11px rgba(33,33,33,.2)!important;; 
+  background-color: rgb(211, 173, 194) !important;
+  color: rgb(98, 77, 89);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2) !important;
 }
 .footer .contactMe .btn-primary:visited {
-background-color: rgb(211, 173, 194) !important;
-color: rgb(98, 77, 89);
-box-shadow:0 0 11px rgba(33,33,33,.2)!important;; 
+  background-color: rgb(211, 173, 194) !important;
+  color: rgb(98, 77, 89);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2) !important;
 }
 .footer h6 {
   color: rgb(98, 77, 89);
@@ -162,9 +246,8 @@ box-shadow:0 0 11px rgba(33,33,33,.2)!important;;
   border-top: dotted rgb(98, 77, 89);
   padding-top: 4px;
 }
-/* media query for hero subtitle on small screens */
-
-@media only screen and (min-width: 200px) and (max-width: 600px)   {
+/* media query for hero subtitle and skills section on small screens */
+@media only screen and (min-width: 200px) and (max-width: 600px) {
   .keeper {
     display: flex;
     flex-wrap: wrap;
@@ -174,5 +257,15 @@ box-shadow:0 0 11px rgba(33,33,33,.2)!important;;
   .myhero .keeper .coolsub {
     font-weight: lighter;
   }
-  
+  .skillsContainer {
+    width: 350px;
+    margin-bottom: 20px;
+  }
+}
+/* media query for bigger screens for skills section */
+@media screen and (min-width: 500px) and (max-width: 1600px) {
+  .skillsContainer {
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }
