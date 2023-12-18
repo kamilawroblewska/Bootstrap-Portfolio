@@ -18,8 +18,8 @@ Explore, Laugh, and Refactor: Dive into the code, embrace the chaos, and make it
 ## Usage
 
 ![bigscreen](https://github.com/kamilawroblewska/Bootstrap-Portfolio/blob/main/Images/screeen1.png?raw=true)
-![medscreen](main/images/screen2.png)
-![smallscreen](main/images/screen3.png)
+![medscreen](https://github.com/kamilawroblewska/Bootstrap-Portfolio/blob/main/Images/screen2.png?raw=true)
+![smallscreen](https://github.com/kamilawroblewska/Bootstrap-Portfolio/blob/main/Images/screen3.png?raw=true)
 
 
 ## Credits
